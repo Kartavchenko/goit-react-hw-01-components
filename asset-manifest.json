@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Kartavchenko/goit-react-hw-01-components.git/static/css/main.7acaea2f.css",
+    "main.js": "/Kartavchenko/goit-react-hw-01-components.git/static/js/main.b0484635.js",
+    "index.html": "/Kartavchenko/goit-react-hw-01-components.git/index.html",
+    "main.7acaea2f.css.map": "/Kartavchenko/goit-react-hw-01-components.git/static/css/main.7acaea2f.css.map",
+    "main.b0484635.js.map": "/Kartavchenko/goit-react-hw-01-components.git/static/js/main.b0484635.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.b0484635.js"
+  ]
+}
