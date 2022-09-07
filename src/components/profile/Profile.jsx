@@ -1,3 +1,4 @@
+import PropTypes  from 'prop-types';
 
 export const Profile = ({ avatar, username, tag, location, stats }) => (
     <div className="profile">
@@ -28,3 +29,11 @@ export const Profile = ({ avatar, username, tag, location, stats }) => (
         </ul>
     </div>
 );
+
+Profile.propTypes = {
+    avatar: PropTypes.string,
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    stats: PropTypes.objectOf(PropTypes.number),
+}

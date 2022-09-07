@@ -1,7 +1,16 @@
-export const FriendListItem = ({avatar, name, isOnline, id}) => (
-  <li class="item" key={id}>
-    <span class="status">{isOnline}</span>
-    <img class="avatar" src={avatar} alt="User avatar" width="48" />
-    <p class="name">{name}</p>
+import PropTypes  from 'prop-types';
+
+export const FriendListItem = ({ avatar, name, isOnline, id }) => (
+  <li className="item" key={id}>Name
+    <span className="status">{isOnline}</span>
+    <img className="avatar" src={avatar} alt="User avatar" width="48" />
+    <p className="name">{name}</p>
   </li>
 );
+
+FriendListItem.propTypes = {
+  avatar: PropTypes.string,
+    name: PropTypes.string,
+    isOnline: PropTypes.bool,
+    id: PropTypes.number,
+};
