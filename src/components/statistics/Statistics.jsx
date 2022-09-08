@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { backgroundColor } from 'styled-system';
 import {Section, Title, List, Items, TextLable, TextPerc} from './statistics.styled';
 
 export const Statistics = ({ title, stats }) => (

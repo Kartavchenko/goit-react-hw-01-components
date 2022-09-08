@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import {
-  Container,
   Text,
   TitleText,
   CardConainer,
