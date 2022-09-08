@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { backgroundColor } from "styled-system";
 
 export const Transaction = styled.table`
     margin-top: 20px;
