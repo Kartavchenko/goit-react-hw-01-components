@@ -1,11 +1,16 @@
-import PropTypes  from 'prop-types';
+import PropTypes from 'prop-types';
+import { Items, Status, Avatar, Text } from './friendListItem.styled';
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 
 export const FriendListItem = ({ avatar, name, isOnline, id }) => (
-  <li className="item" key={id}>Name
-    <span className="status">{isOnline}</span>
-    <img className="avatar" src={avatar} alt="User avatar" width="48" />
-    <p className="name">{name}</p>
-  </li>
+  <Items key={id} >
+    <Status event={isOnline}>{isOnline}
+      <AiOutlineCheckCircle style={isOnline ? {display: "block"} : {display: "none"}}/>
+      <AiOutlineCloseCircle style={isOnline ? {display: "none"} : {display: "block"}}/>
+    </Status>
+    <Avatar src={avatar} alt="User avatar" width="48" />
+    <Text>{name}</Text>
+  </Items>
 );
 
 FriendListItem.propTypes = {
@@ -14,3 +19,4 @@ FriendListItem.propTypes = {
     isOnline: PropTypes.bool,
     id: PropTypes.number,
 };
+

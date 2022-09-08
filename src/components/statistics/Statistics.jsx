@@ -1,18 +1,19 @@
-import PropTypes  from 'prop-types';
+import PropTypes from 'prop-types';
+import { backgroundColor } from 'styled-system';
+import {Section, Title, List, Items, TextLable, TextPerc} from './statistics.styled';
 
 export const Statistics = ({ title, stats }) => (
-  <section className="statistics">
-    <h2 className="title">{title}</h2>
-    
-    <ul className="stat-list">
+  <Section>
+    <Title>{title}</Title>
+    <List>
       {stats.map(stat => (
-        <li className="item" key={stat.id}>
-          <span className="label">{stat.label} </span>
-          <span className="percentage">{stat.percentage}</span>
-        </li>
+        <Items key={stat.id}>
+          <TextLable>{stat.label} </TextLable>
+          <TextPerc>{stat.percentage}%</TextPerc>
+        </Items>
       ))}
-    </ul>
-  </section>
+    </List>
+  </Section>
 );
 
 Statistics.propTypes = {

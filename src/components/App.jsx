@@ -6,11 +6,13 @@ import { Profile } from './profile/Profile';
 import { Statistics } from './statistics/Statistics';
 import { FriendList } from './friendList/FriendList';
 import { TransactionHistory } from './transactionHistory/TransactionHistory';
+import { Container } from './App.styled';
+
 
 export const App = () => {
   return (
-    <div>
-      <Profile
+    <Container>
+        <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -23,7 +25,7 @@ export const App = () => {
       
       <FriendList friends={friends} />
       
-      <TransactionHistory items={transactions} />;
-    </div>
+      <TransactionHistory items={transactions} />
+    </Container>
   );
 };
